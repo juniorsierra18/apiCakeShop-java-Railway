@@ -18,7 +18,7 @@ import com.apicokeshop.cokeshop.Repositories.ClientRepository;
 
 @RestController
 @RequestMapping("/clients")
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "http://localhost:5173")
 public class ClientController {
     @Autowired
     private ClientRepository clientRepository;
