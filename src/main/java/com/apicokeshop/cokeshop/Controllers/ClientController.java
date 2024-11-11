@@ -3,6 +3,7 @@ package com.apicokeshop.cokeshop.Controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,7 @@ import com.apicokeshop.cokeshop.Repositories.ClientRepository;
 
 @RestController
 @RequestMapping("/clients")
+@CrossOrigin(origins = "https://apicakeshop-java-railway-production.up.railway.app")
 public class ClientController {
     @Autowired
     private ClientRepository clientRepository;
